@@ -17,14 +17,6 @@ public class JacksonAwsClientJsonSerializer implements AwsClientJsonSerializer {
 	static ObjectMapper objectMapper = JacksonConf.DEFAULT_INSTANCE;
 
 	@Override
-	public AwsClientJsonSerializer with(NamingStrategy namingStrategy) {
-		if ( NamingStrategy.UPPER_CAMEL_CASE.equals( namingStrategy ) ) {
-			objectMapper.setPropertyNamingStrategy( PropertyNamingStrategy.UPPER_CAMEL_CASE );
-		}
-		return this;
-	}
-
-	@Override
 	public String serialize( Object object ) {
 		try {
 			return objectMapper.writeValueAsString( object );
