@@ -1,1 +1,1 @@
-lambdify.aws.client.core.jsoniter.JacksonApiGatewayJsonSerializer
+lambdify.aws.jackson.JacksonApiGatewayJsonSerializer

@@ -1,4 +1,4 @@
-package lambdify.aws.client.core.jsoniter;
+package lambdify.aws.jackson;
 
 import java.io.IOException;
 import java.util.List;

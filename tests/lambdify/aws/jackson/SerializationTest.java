@@ -3,7 +3,6 @@ package lambdify.aws.jackson;
 import static org.junit.jupiter.api.Assertions.*;
 import java.nio.file.*;
 import java.util.Date;
-import lambdify.aws.client.core.jsoniter.JacksonConf;
 import lambdify.aws.events.dynamodb.DynamodbEvent;
 import lombok.*;
 import org.junit.jupiter.api.*;
