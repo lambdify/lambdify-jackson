@@ -1,0 +1,37 @@
+{
+  "Records": [
+    {
+      "eventID": "9225b0350d8b7a6b909fbddefad62cce",
+      "eventName": "INSERT",
+      "eventVersion": "1.1",
+      "eventSource": "aws:dynamodb",
+      "awsRegion": "sa-east-1",
+      "dynamodb": {
+        "ApproximateCreationDateTime": 1.52950428E9,
+        "Keys": {
+          "protocolId": {
+            "S": "2E6F22E3207B2ce8626043f64c6899c7491b4f4d987f"
+          },
+          "tenantId": {
+            "N": "36"
+          }
+        },
+        "NewImage": {
+          "protocolId": {
+            "S": "2E6F22E3207B2ce8626043f64c6899c7491b4f4d987f"
+          },
+          "processId": {
+            "S": "exemploInitFim"
+          },
+          "tenantId": {
+            "N": "36"
+          }
+        },
+        "SequenceNumber": "3606400000000002048439332",
+        "SizeBytes": 151,
+        "StreamViewType": "NEW_AND_OLD_IMAGES"
+      },
+      "eventSourceARN": "arn:aws:dynamodb:sa-east-1:268326769536:table/CapacitorBatchRequest/stream/2018-06-20T13:01:07.523"
+    }
+  ]
+}

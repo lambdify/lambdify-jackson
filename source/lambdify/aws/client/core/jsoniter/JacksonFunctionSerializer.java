@@ -3,7 +3,7 @@ package lambdify.aws.client.core.jsoniter;
 import java.io.*;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lambdify.core.FunctionSerializer;
-import lombok.Setter;
+import lombok.*;
 import lombok.experimental.Accessors;
 
 /**

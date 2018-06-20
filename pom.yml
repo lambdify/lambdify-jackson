@@ -15,6 +15,7 @@ properties:
 
 dependencies:
 - { groupId: org.lambdify, artifactId: lambdify-aws-client-core, version: "${project.version}", scope: "provided" }
+- { groupId: org.lambdify, artifactId: lambdify-aws-client-dynamodb, version: "${project.version}", scope: "test" }
 - { groupId: org.lambdify, artifactId: lambdify-core, version: "${project.version}", scope: "provided" }
 - { groupId: org.lambdify, artifactId: lambdify-apigateway-java, version: "${project.version}", scope: "provided" }
 - { groupId: com.fasterxml.jackson.core, artifactId: jackson-annotations, version: "${version.jackson}" }
