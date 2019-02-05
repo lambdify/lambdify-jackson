@@ -36,7 +36,7 @@ public class JacksonAwsClientJsonSerializer implements AwsClientJsonSerializer {
 	}
 
 	@Override
-	public <T> T unserialize(String input, Class<T> clazz) {
+	public <T> T deserialize(String input, Class<T> clazz) {
 		try {
 			return objectMapper.readValue( input, clazz );
 		} catch ( IOException e ) {
@@ -45,7 +45,7 @@ public class JacksonAwsClientJsonSerializer implements AwsClientJsonSerializer {
 	}
 
 	@Override
-	public <T> List<T> unserializeAsList(String input, Class<T> aClass) {
+	public <T> List<T> deserializeAsList(String input, Class<T> aClass) {
 		try {
 			val javaType = objectMapper.getTypeFactory().constructCollectionType(List.class, aClass);
 			return objectMapper.readValue(input, javaType);
