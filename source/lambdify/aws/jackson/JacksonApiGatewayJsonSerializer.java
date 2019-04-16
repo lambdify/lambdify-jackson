@@ -26,7 +26,7 @@ public class JacksonApiGatewayJsonSerializer implements lambdify.apigateway.Seri
 	}
 
 	@Override
-	public <T> T toObject(String input, Class<T> clazz, boolean b) {
+	public <T> T toObject(String input, Class<T> clazz) {
 		try {
 			return objectMapper.readValue( input, clazz );
 		} catch ( IOException e ) {
